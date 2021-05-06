@@ -1,0 +1,13 @@
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
+  
+   background: #215B94 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+
+
+
+.row-fluid{text-align:center;}
+.img-responsive{margin:0 auto}
+.imgdiv img {
+   width: 100%;
+ }
