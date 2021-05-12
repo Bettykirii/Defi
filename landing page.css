@@ -1,13 +1,378 @@
 html, body {
-   max-width: 100%;
    overflow-x: hidden;
   
-   background: #215B94 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+   background: #0e0e34 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 550px;
+  }
+  
+  h1 span {
+    font-size: 20px;
+    margin-left: 40px;
+  }
+  
+  
+  p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+  }
+ 
+  .word {
+   position:relative;
+    color: white;
+    font: 540 normal 2.5em 'tahoma';
+  }
+
+  strong,
+  b {
+    font-weight: 600
+  }
+ 
+  a.btn{
+    position: relative;    
+      color: #000;    
+      font-size: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 50px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 50px;
+      letter-spacing: 2px;
+  }
+  
+  a.btn::before, 
+  a.btn::after, 
+  span::before, 
+  span::after{
+    content: '';
+      position: absolute;    
+      width: 10px;
+      height: 10px;
+      transition: 1s;
+  }
+  
+  a.btn::before{
+    top: -0.5px;
+      left: -0.5px;
+      border-top: 2px #DCDCDC  solid;
+      border-left: 2px #DCDCDC   solid;
+  }
+  
+  a.btn::after{
+    top: -0.5px;
+      right: -0.5px;
+      border-top: 2px #DCDCDC  solid;
+      border-right: 2px #DCDCDC   solid;
+  } 
+  
+  span::before{
+    bottom: -0.5px;
+      left: -0.5px;
+      border-bottom: 2px #DCDCDC  solid;
+      border-left: 2px #DCDCDC solid;
+  } 
+  
+  span::after{
+    bottom: -0.5px;
+      right: -0.5px;
+      border-bottom: 2px #DCDCDC solid;
+      border-right: 2px #DCDCDC solid;
+  }
+  
+  a.btn:hover{
+      color: #fff;
+  }
+  
+  a.btn:hover::before,
+  a.btn:hover::after,
+  a.btn:hover span::before,
+  a.btn:hover span::after{
+      width: calc( 190px / 2 );
+      height: calc( 40px / 2 );
+  }
+
+#card {
+  max-width: 100%;
+  perspective: 1000px;
+  margin: 25px;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container_slider{
+  overflow: hidden;
+  font-size:50px;
+  font-weight:800;
+}
+
+.container-wrapper {
+   
+  text-align : center;
+  display:flex;
+  height:auto;
+  
+  animation: slide 4s linear infinite;
+}
+
+.content-one {
+  width:33.333333%;
+}
+
+.content-two {
+  width:33.333333%;
+}
+.content-three{
+  
+  width:33.333333%;
+}
+
+.content-four{
+  
+  width:33.333333%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 100%;
+}
+
+.box {
+  flex: 1;
+  background-image: url('Images/rsz_unisniper_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px;
+  color: #fff;
+  height: 250px;
+}
+.box1{
+  flex: 1;
+  flex: 1;
+  background-image: url('Images/rsz_robot2_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px;
+  color: #fff;
+  height: 230px;
+}
+.vertical {
+  border-left: 3px solid white;
+  height: 50px;
+  position:absolute;
+  left: 50%;
+}
+.box2{
+  flex: 1;
+  background-image: url('Images/rsz_ether_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px;
+  color: #fff;
+  height: 250px;
+}
+.box3{
+  flex: 1;
+  flex: 1;
+  background-image: url('Images/rsz_1defibot_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px;
+  color: #fff;
+  height: 250px;
+}
+
+
+ .cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.main-container {
+  background: #0e0e34 ;
+  max-width: 1000px;
+  margin-top:50px;
+  /* margin: 25px auto 25px auto; */
+  position: relative;
+}
+
+.container {
+  position: relative;
+  padding: 25px;
+}
+/*animation element*/
+
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+/*animation element sliding left*/
+
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+/*animation slide left styled for testimonials*/
+
+.animation-element.slide-left.testimonial {
+  float: left;
+  width: 47%;
+  margin: 0% 1.5% 3% 1.5%;
+  background: #0e0e34 ;
+  padding: 15px;
+box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  border: solid 1px #0e0e34 ;
+}
+.animation-element.slide-left.testimonial:hover,
+.animation-element.slide-left.testimonial:active{
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.animation-element.slide-left.testimonial:nth-of-type(odd) {
+  width: 48.5%;
+  margin: 0% 1.5% 3.0% 0%;
+}
+
+.animation-element.slide-left.testimonial:nth-of-type(even) {
+  width: 48.5%;
+  margin: 0% 0% 3.0% 1.5%;
+}
+
+.animation-element.slide-left.testimonial .header{
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.animation-element.slide-left.testimonial .left{
+  float: left;
+  margin-right: 15px;
+}
+.animation-element.slide-left.testimonial .right{
+  float: left;
+}
+
+.animation-element.slide-left.testimonial img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px rgba(51, 51, 51, 0.5);
+}
+
+.animation-element.slide-left.testimonial h3 {
+  margin: 0px 0px 5px 0px;
+}
+
+.animation-element.slide-left.testimonial h4 {
+  margin: 0px 0px 5px 0px;
+}
+
+.animation-element.slide-left.testimonial .content {
+  float: left;
+  width:100%;
+  margin-bottom: 10px;
+}
+
+.animation-element.slide-left.testimonial .rating{}
+
+.animation-element.slide-left.testimonial i {
+  color: #fff;
+  margin-right: 5px;
+}
 
 
 
-.row-fluid{text-align:center;}
-.img-responsive{margin:0 auto}
-.imgdiv img {
-   width: 100%;
- }
+/*media queries for small devices*/
+@media screen and (max-width: 678px){
+  /*testimonials*/
+  .animation-element.slide-left.testimonial,
+  .animation-element.slide-left.testimonial:nth-of-type(odd),
+  .animation-element.slide-left.testimonial:nth-of-type(even){
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .animation-element.slide-left.testimonial .right,
+  .animation-element.slide-left.testimonial .left,
+  .animation-element.slide-left.testimonial .content,
+  .animation-element.slide-left.testimonial .rating{
+    text-align: center;
+    float: none;
+  }
+  .animation-element.slide-left.testimonial img{
+    width: 85px;
+    height: 85px;
+    margin-bottom: 5px;
+  }
+  
+}
