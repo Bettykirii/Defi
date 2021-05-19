@@ -2,7 +2,7 @@ html, body {
    overflow-x: hidden;
   
    background: #0e0e34 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
-
+ 
 
   img {
     display: block;
@@ -20,6 +20,29 @@ html, body {
     overflow: hidden;
     position: relative;
     width: 550px;
+  }
+  h1.second {
+    font-weight: 200;
+    color: #26343a;
+  }
+  
+  h1.second span {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px ;
+    border-radius: 10px;
+    border-bottom: 1px solid #0e0e34;
+  }
+  
+  h1.second span:after {
+    content: '';
+    position: absolute;
+    bottom: calc(-100% - 1px);
+    margin-left: -10px;
+    display: block;
+    width: 100%; height: 100%;
+    border-radius: 10px;
+    border-top: 1px solid #0e0e34;
   }
   
   h1 span {
@@ -352,7 +375,24 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 
-
+header {
+  color: white;
+  background: #1c262b;
+  padding: 10rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+@media (max-width: 43.75em) {
+  header {
+    padding: 2rem 0;
+  }
+}
+header h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem;
+}
 /*media queries for small devices*/
 @media screen and (max-width: 678px){
   /*testimonials*/
